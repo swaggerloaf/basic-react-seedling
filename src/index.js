@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.css";
-
-function Button() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times.</p>
-      <button class="btn btn-danger" onClick={() => setCount(count + 1)}>
-        Click Me
-      </button>
-    </div>
-  );
-}
+const Beverage = () => (
+  <div>
+    <FontAwesomeIcon icon={faCheckSquare} />
+    Your <FontAwesomeIcon icon={faCoffee} /> is hot and ready!
+  </div>
+);
 
 const domElement = document.getElementById("root");
-ReactDOM.render(<Button></Button>, domElement);
+ReactDOM.render(<Beverage></Beverage>, domElement);
