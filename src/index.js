@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 const Beverage = () => (
-  <div>
-    <p class="text-danger">.text-danger</p>
+  <div className="container">
+    <p class="text-primary">Welcome to your first Web Application!</p>
     <span className="text-info">
       Your <FontAwesomeIcon icon={faCoffee} /> is hot and ready!
     </span>
